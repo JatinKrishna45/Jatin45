@@ -23,7 +23,7 @@ def display_text(stdscr, target, current, wpm=0):
 		stdscr.addstr(0, i, char, color)
 
 def load_text():
-	with open("text.txt", "r") as f:
+	with open("wpmtext.txt", "r") as f:
 		lines = f.readlines()
 		return random.choice(lines).strip()
 
